@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> come & go </title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../../styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+	
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="margin: 0;">
+			  <a href="../art.html">all</a>
+			  <a href="../illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content"  style="margin: 0;">
+			  <a href="../../about/bio.html">bio</a>
+			  <a href="../../about/resume.html">resume</a>
+			</div>
+		</div>
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+						<img id="mail-logo" alt="email button" src="../../assets/bio/mail-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+						<img id="linkedin-logo" alt="linkedin button" src="../../assets/bio/linkedin-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<div class="art-title">
+			porquê o conflito?
+		</div>
+
+		<!-- Container for the image gallery -->
+		<div class="container">
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+			<!-- Full-width images with number text -->
+			<div class="gallery" style="display: block;">
+				<img src="../../assets/portfolio/porque-o-conflito/zine0.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/porque-o-conflito/zine1.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/porque-o-conflito/zine2.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/porque-o-conflito/zine3.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/porque-o-conflito/zine4.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+		
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+		
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+		
+				function showSlides(n) {
+					let i;
+					let slides = document.getElementsByClassName("gallery");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+				}
+			</script>
+		</div>
+	</div>
+
+	<div class="art-info" style="width: 100%; margin-top:5%; margin-bottom:0%">
+		<div class="art-date">
+			2/16/23
+		</div>
+		<div class="art-dim">
+				
+		</div>
+		<div class="art-media">
+			marker, pen, watercolor pencils, acrylic paint, stamps, magazine & paper collage		
+		</div>
+	</div>
+
+	<div style="display: block;">
+		<div class="art-description" style="width: 90%;"> 
+			A collaborative zine by myself and Kayleen Vicente
+		</div>
+	
+		<div class="art-reflection" style="width: 90%; margin-top:0%">
+			this is a piece of translations – translations between languages, 
+			modes of expression and people. my friend kayleen vicente first wrote 
+			the poem on her own in portuguese, then translated it into english as 
+			a way to allow her close friends to connect to her. i then illustrated 
+			the poem while spending time with kayleen. we both worked together to 
+			break the poem's structure into the zine form, asking each other questions 
+			about the piece's concepts and symbolism. we work in the moment, creating 
+			first and unpacking after. while translations are imperfect, they behave 
+			here as acts of love and understanding.		
+		</div>
+	</div>
+  </body>
+
+
+
+</html>

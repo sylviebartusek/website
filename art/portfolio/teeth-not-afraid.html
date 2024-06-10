@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> My Teeth Are Not Afraid to Bite </title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../../styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+	
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="margin: 0;">
+			  <a href="../art.html">all</a>
+			  <a href="../illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content"  style="margin: 0;">
+			  <a href="../../about/bio.html">bio</a>
+			  <a href="../../about/resume.html">resume</a>
+			</div>
+		</div>
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+						<img id="mail-logo" alt="email button" src="../../assets/bio/mail-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+						<img id="linkedin-logo" alt="linkedin button" src="../../assets/bio/linkedin-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<div class="art-title">
+			My Teeth Are Not Afraid to Bite
+		</div>
+
+
+		<!-- Container for the image gallery -->
+		<div class="container">
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Full-width images with number text -->
+			<div class="gallery" style="display: block;">
+				<img src="../../assets/portfolio/teeth-not-afraid/MY_TEETH_ARE_NOT_AFRAID_TO_BITE.jpg" style="width: 30%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/teeth-not-afraid/MY_TEETH_ARE_NOT_AFRAID_TO_BITE_2.jpg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/teeth-not-afraid/MY_TEETH_ARE_NOT_AFRAID_TO_BITE_3.jpg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/teeth-not-afraid/MY_TEETH_ARE_NOT_AFRAID_TO_BITE_4.jpg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/teeth-not-afraid/MY_TEETH_ARE_NOT_AFRAID_TO_BITE_5.jpg" style="width: 50%; display:block">
+			</div>
+		
+			<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+		
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+		
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+		
+				function showSlides(n) {
+					let i;
+					let slides = document.getElementsByClassName("gallery");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+				}
+			</script>
+		</div>
+	</div>
+
+	<div class="art-info" style="width: 100%; margin-top:5%; margin-bottom:0%">
+		<div class="art-date">
+			2/22/24		
+		</div>
+		<div class="art-dim">
+			44" x 31" x 14"
+		</div>
+		<div class="art-media">
+			dark annealed steel wire, sculpey
+		</div>
+	</div>
+	
+	<div class="art-description"> 
+		This piece is composed of four different wire self-portraits with sharp teeth, 
+		surrounded by text, and held inside a metal frame.
+	</div>
+
+	<div class="art-reflection" style="width: 40%; margin-top:0%">
+		This sculpture was first based off a 2-D artwork I made as a reaction to someone 
+		close to me telling me about their experiences of sexual assault. The text was 
+		lovingly directed to this specific person, while the faces are directed to the 
+		assaulters. I wanted to revisit this artwork because I thought there were many 
+		emotional aspects of the piece that could be amplified in 3-D. Specifically, I 
+		think wire and metal are the perfect materials for this work, as they are sharp 
+		and bold. As an example, there are certain sections along the metal frame that 
+		have the appearance of barbed wire, which I think are very powerful symbolically. 
+		The transparency of the wire faces is also very important, because the person within 
+		the woman is not acknowledged, and therefore is not even seen as material. However, 
+		the text and the teeth cannot be missed, as they are solid and threatening. The 
+		metal frame holds everything together, like a cage that is bending and about to 
+		burst (which it actually did many times). 
+	</div>
+
+	<img src="../../assets/portfolio/teeth-not-afraid/MY_TEETH_ARE_NOT_AFRAID_TO_BITE.jpeg" style="width: 40%; display:block">
+
+
+  </body>
+
+
+
+</html>

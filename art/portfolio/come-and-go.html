@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> come & go </title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../../styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+	
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="margin: 0;">
+			  <a href="../art.html">all</a>
+			  <a href="../illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content"  style="margin: 0;">
+			  <a href="../../about/bio.html">bio</a>
+			  <a href="../../about/resume.html">resume</a>
+			</div>
+		</div>
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+						<img id="mail-logo" alt="email button" src="../../assets/bio/mail-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+						<img id="linkedin-logo" alt="linkedin button" src="../../assets/bio/linkedin-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<div class="art-title">
+			cum & go & come again 
+		</div>
+
+		<!-- Container for the image gallery -->
+		<div class="container">
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+			<!-- Full-width images with number text -->
+			<div class="gallery" style="display: block;">
+				<img src="../../assets/portfolio/come_and_go/page0.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page1.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page2.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page3.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page4.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page4b.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page5.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery" style="display: block;">
+				<img src="../../assets/portfolio/come_and_go/page6.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page7.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page7b.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page7c.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page8.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page9.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page9b.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery" style="display: block;">
+				<img src="../../assets/portfolio/come_and_go/page10.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page10b.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page11.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/come_and_go/page12.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+		
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+		
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+		
+				function showSlides(n) {
+					let i;
+					let slides = document.getElementsByClassName("gallery");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+				}
+			</script>
+		</div>
+
+		
+	
+
+	</div>
+
+	<div class="art-info" style="width: 100%; margin-top:5%; margin-bottom:0%">
+		<div class="art-date">
+			5/12/23
+		</div>
+		<div class="art-dim">
+				
+		</div>
+		<div class="art-media">
+			carboard, paper, thread, wire, colored pencil, ink, pen, marker, plastic spiders, advil, birth control, bandaid, lego, receipts, sticks, leaves, seeds, plastic baby
+		</div>
+	</div>
+
+	<div style="display: block;">
+		<div class="art-description" style="width: 90%;"> 
+			A hand-bound multi-media book of thoughts, materials, and found objects.
+		</div>
+	
+		<div class="art-reflection" style="width: 90%; margin-top:0%">
+			This book explores the highly ephemeral yet deeply meaningful relationships one forms throughout their life. It is mostly inspired by young queer love, and also ties in the instability of a defined home/family/community while in college. It is hopeless and hopeful, wishing for things to stay the same but also accepting that change will happen no matter what, and that only what is now present can be loved. It's about spring, rebirth, and reliving the present in its endless forms over and over again, forever until we die. 
+		</div>
+	</div>
+
+	<!-- <img src="../../assets/portfolio/come_and_go/flipthrough.gif"  width="40%" /> -->
+
+	
+	
+
+  </body>
+
+
+
+</html>

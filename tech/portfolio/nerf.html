@@ -1,0 +1,124 @@
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> Stock Market Predictions </title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../../styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+	
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="margin: 0;">
+			  <a href="../../art/art.html">all</a>
+			  <a href="../../art/illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content"  style="margin: 0;">
+			  <a href="../../about/bio.html">bio</a>
+			  <a href="../../about/resume.html">resume</a>
+			</div>
+		</div>
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+						<img id="mail-logo" alt="email button" src="../../assets/bio/mail-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+						<img id="linkedin-logo" alt="linkedin button" src="../../assets/bio/linkedin-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<div class="art-title">
+			NeRFS
+		</div>
+	</div>
+
+	<div style="display: block; width:80%; margin:auto; margin-bottom:2%">
+		<img src="../../assets/portfolio/nerfs/poster.jpg" width="100%">
+		</video> 
+	</div>
+
+	<div class="art-info">
+		<div class="art-date">
+			5/10/24
+		</div>
+		<div class="art-dim">
+		</div>
+		<div class="art-media">
+			Python, TensorFlow, JSON, CSV, Numpy, Pandas, Matplotlib, Seaborn
+		</div>
+	</div>
+
+	<div style="display: block; width:90%; margin:auto; margin-bottom:0%">
+		<div class="art-description" style="margin-bottom:0">
+			For my final Deep Learning project, my team decided to implement 
+			<a href="https://arxiv.org/pdf/2003.08934" style="color: rgb(246, 50, 50);">this 2020 paper on NeRFs</a>.   
+			For those unfamiliar with NeRF, we trained a model on a collection of images of an object at different camera angles, as well as the 
+			related camera angle information for each image. We then make the model generate the 3D object at a camera angle that the 
+			model has not seen in the training data. 
+		</div>
+
+		<div class="art-reflection" style="width: 90%;">
+			For this project, I worked mostly on making our dataset of images. I used Autodesk Maya and python scripts to create 600+ images 
+			of a 3D model at different camera angles, and created a python script that would generate a JSON file of all camera information 
+			for each image. 
+		</div>
+	</div>
+
+
+
+
+
+	
+
+	
+  </body>
+
+
+
+</html>

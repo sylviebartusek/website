@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> IMOVETHROUGHYOUMOVETHROUGHME </title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../../styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+	
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="margin: 0;">
+			  <a href="../art.html">all</a>
+			  <a href="../illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content"  style="margin: 0;">
+			  <a href="../../about/bio.html">bio</a>
+			  <a href="../../about/resume.html">resume</a>
+			</div>
+		</div>
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+						<img id="mail-logo" alt="email button" src="../../assets/bio/mail-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+						<img id="linkedin-logo" alt="linkedin button" src="../../assets/bio/linkedin-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<div class="art-title">
+			IMOVETHROUGHYOU<br>MOVETHROUGHME
+		</div>
+
+
+		<!-- Container for the image gallery -->
+		<div class="container">
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Full-width images with number text -->
+			<div class="gallery" style="display: block;">
+				<img src="../../assets/portfolio/imovethroughyou/IMOVETHROUGHYOUMOVETHROUGHME.jpg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/imovethroughyou/IMOVETHROUGHYOUMOVETHROUGHME_1.jpg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/imovethroughyou/IMOVETHROUGHYOUMOVETHROUGHME_2.jpg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/imovethroughyou/IMOVETHROUGHYOUMOVETHROUGHME_3.jpg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/imovethroughyou/IMOVETHROUGHYOUMOVETHROUGHME_4.jpg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/imovethroughyou/IMOVETHROUGHYOUMOVETHROUGHME_5.jpg" style="width: 50%; display:block">
+			</div>
+		
+			<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+		
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+		
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+		
+				function showSlides(n) {
+					let i;
+					let slides = document.getElementsByClassName("gallery");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+				}
+			</script>
+		</div>
+	</div>
+
+	<div class="art-info" style="width: 100%; margin-top:5%; margin-bottom:0%">
+		<div class="art-date">
+			7/26/22
+		</div>
+		<div class="art-dim">
+			3' x 58” x 35”
+		</div>
+		<div class="art-media">
+			wood, found bike parts, found metal bench part, glass bottles, wind-chimes 
+		</div>
+	</div>
+	
+	<div class="art-description"> 
+		This piece is an outdoor bench designed to be sat on by 1-6 people at a time. 
+		Inside each armrest is a bike wheel that can be spun by the sitter using the pedal. 
+		On the inside of the bench, are glass bottles and windchimes, that create music 
+		from the wind and from the vibrations of the bike wheels and the sitters. 
+	</div>
+
+	<div class="art-reflection" style="width: 90%; margin-top:0%">
+		My concept from the beginning was to deepen connections, and to create a chair 
+		that could transfer energies, especially mechanical and sonic energies. In the end, 
+		I didn’t stray too far from this. Similarly to my in-the-moment, unexpected art 
+		process, the abandoned objects I encountered in my day-to-day were crucial in the 
+		design of my piece: specifically two abandoned bikes and a green decorative piece 
+		from a dilapidated bench. My final bench is a place where physical and sonic energies 
+		transform into social power and community. As people spin the wheels of the bikes, 
+		the bench vibrates, and all the sitters are united in the physical feeling of the
+		 bench, and can work together to create music through these vibrations. As the wind 
+		 blows, the windchimes and glass bottles also create noise, and the sitters can tap 
+		 into the surrounding forces around them. In the end, this bench is a creative exercise 
+		 for people and their surroundings to engage in, and to feel closer to each other as a 
+		 result. It is a bench for conversation, to unite the restless who have trouble staying 
+		 still, and the meditative who enjoy listening and learning to their surroundings, to 
+		 find each other and to exchange ways of being. 
+	</div>
+
+  </body>
+
+
+
+</html>

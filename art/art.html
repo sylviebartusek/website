@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>art</title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="margin: 0;">
+			  <a href="../art/art.html">all</a>
+			  <a href="../art/illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content"  style="margin: 0;">
+			  <a href="../about/bio.html">bio</a>
+			  <a href="../about/resume.html">resume</a>
+			</div>
+		</div>
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+						<img id="mail-logo" alt="email button" src="../assets/bio/mail-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+						<img id="linkedin-logo" alt="linkedin button" src="../assets/bio/linkedin-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div style="overflow-x:hidden; width:100%;">
+		<h1 style="font-size: 40px; text-align:left; margin:0; margin-left:25px; font-family:Petit-Formal-Script"><br>creative work</h1>
+
+		<!-- ART FILTERS -->
+		<div id="myBtnContainer" style="margin-left: 25px; margin-top: 4%; margin-bottom:20px; float:left; width:100%; padding:0">
+			<button class="btn active" onclick="filterSelection('all')"> all </button>
+			<button class="btn" onclick="filterSelection('video')"> film</button>
+			<button class="btn" onclick="filterSelection('sound')"> sound</button>
+			<button class="btn" onclick="filterSelection('sculpture')"> sculpture</button>
+			<button class="btn" onclick="filterSelection('performance')"> performance</button>
+			<button class="btn" onclick="filterSelection('installation')"> installation</button>
+			<button class="btn" onclick="filterSelection('book')"> book forms</button>
+		</div>
+
+	</div>
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="row" style="margin:auto">
+		<div class="column sculpture sound">
+			<div class="content">
+				<a href="./portfolio/pump-dis-organ.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/pump-disorgan.jpg" alt="Pump (dis)Organ" style="width: 90%">
+						<div class="portfolio-title">Pump (dis)Organ</h4>
+						<div class="portfolio-meta">sculpture, sound | 5/9/2024</p>
+					</button>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="column sculpture sound">
+			<div class="content">
+				<a href="./portfolio/hexadeca-kit.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/hexadeca-kit.jpg" alt="Hexadeca-Kit" style="width: 90%">
+						<div class="portfolio-title">Hexadeca-Kit</h4>
+						<div class="portfolio-meta">sculpture, sound | 4/11/2024</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sculpture sound">
+			<div class="content">
+				<a href="./portfolio/telephone-chair.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/telephone-chair.jpeg" alt="Telephone Chair" style="width: 90%">
+						<div class="portfolio-title">Telephone Chair</h4>
+						<div class="portfolio-meta">sculpture, sound | 3/19/2024</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sculpture">
+			<div class="content">
+				<a href="./portfolio/silver-platter-pleasure.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/silver-platter-pleasure.jpg" alt="Silver Platter Pleasure" style="width: 90%">
+						<div class="portfolio-title">Silver Platter Pleasure</h4>
+						<div class="portfolio-meta">sculpture | 2/22/2024</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sculpture">
+			<div class="content">
+				<a href="./portfolio/trans-elemental.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/trans-elemental.jpg" alt="Trans-Elemental" style="width: 90%">
+						<div class="portfolio-title">Trans-Elemental</h4>
+						<div class="portfolio-meta">sculpture | 2/6/2024</p>
+					</button>
+				</a>
+				
+			</div>
+		</div>
+
+		<div class="column sound performance">
+			<div class="content">
+				<a href="./portfolio/following-ducks.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/following-ducks.jpg" alt="Following Ducks" style="width: 90%">
+						<div class="portfolio-title">Following Ducks</h4>
+						<div class="portfolio-meta">sound, performance | 10/18/23</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sound performance">
+			<div class="content">
+				<a href="./portfolio/drum-woman-machine.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/drum-woman-machine.png" alt="Drum-Woman-Machine: Performing Cyberfeminist Theory" style="width: 90%">
+						<div class="portfolio-title">Drum-Woman-Machine...</h4>
+						<div class="portfolio-meta">sound, performance | 12/18/2023</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sound installation">
+			<div class="content">
+				<a href="./portfolio/communal-spectre.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/communal-spectre.jpeg" style="width: 90%">
+						<div class="portfolio-title">Communal Spectre</h4>
+						<div class="portfolio-meta">sound, installation | 12/6/23</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sound video">
+			<div class="content">
+				<a href="./portfolio/inside-is-outside.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/inside-is-outside.jpg" style="width: 90%">
+						<div class="portfolio-title">Inside is Outside</h4>
+						<div class="portfolio-meta">sound, film | 5/17/23</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sound video">
+			<div class="content">
+				<a href="./portfolio/run-cycle.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/run-cycle.png" style="width: 90%">
+						<div class="portfolio-title">Run, Cycle</h4>
+						<div class="portfolio-meta">sound, film | 12/15/22</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sculpture">
+			<div class="content">
+				<a href="./portfolio/teeth-not-afraid.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/teeth-not-afraid.jpg" style="width: 90%">
+						<div class="portfolio-title">My Teeth Are Not Afraid to Bite</h4>
+						<div class="portfolio-meta">sculpture | 8/4/22</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sound sculpture">
+			<div class="content">
+				<a href="./portfolio/imovethroughyou.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/imovethroughyou.jpg" style="width: 90%">
+						<div class="portfolio-title">IMOVETHOUGHYOU MOVETHROUGHME</h4>
+						<div class="portfolio-meta">sound, sculpture | 7/26/22</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sculpture">
+			<div class="content">
+				<a href="./portfolio/power-boot.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/power-boot.jpg" style="width: 90%">
+						<div class="portfolio-title">Power Boot</h4>
+						<div class="portfolio-meta">sculpture | 7/6/22</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column video">
+			<div class="content">
+				<a href="./portfolio/eyes.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/eyes.png" style="width: 90%">
+						<div class="portfolio-title">eyes</h4>
+						<div class="portfolio-meta">film | 10/13/21</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column book-forms">
+			<div class="content">
+				<a href="./portfolio/come-and-go.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/come-and-go.jpeg" style="width: 90%">
+						<div class="portfolio-title">come & go</h4>
+						<div class="portfolio-meta">book | 5/12/23</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column video">
+			<div class="content">
+				<a href="./portfolio/drummer-animated.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/drummer-stop-motion.png" style="width: 90%">
+						<div class="portfolio-title">Drummer</h4>
+						<div class="portfolio-meta">film | 12/17/18</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column book">
+			<div class="content">
+				<a href="./portfolio/porque-o-conflito.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/porque-o-conflito.png" style="width: 90%">
+						<div class="portfolio-title">porquê o conflito?</h4>
+						<div class="portfolio-meta">zine | 2/16/23</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column book">
+			<div class="content">
+				<a href="./portfolio/red-thread.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/red-thread.png" style="width: 90%">
+						<div class="portfolio-title">red thread</h4>
+						<div class="portfolio-meta">book | 2/10/23</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column book">
+			<div class="content">
+				<a href="./portfolio/feed-me-the-charcoal.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/feed-charcoal.jpeg" style="width: 90%">
+						<div class="portfolio-title">Feed Me the Charcoal</h4>
+						<div class="portfolio-meta">sequential artwork | 12/8/22</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column book">
+			<div class="content">
+				<a href="./portfolio/sketchbook-2021-22.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/sketchbook-2021-22.png" style="width: 90%">
+						<div class="portfolio-title">Sketchbook 2021-2022</h4>
+						<div class="portfolio-meta">book | 9/30/22</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column book">
+			<div class="content">
+				<a href="./portfolio/a-million-dizzy-steps.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/a-million-dizzy-steps.png" style="width: 90%">
+						<div class="portfolio-title">A Million Dizzy Steps</h4>
+						<div class="portfolio-meta">zine | 4/28/21</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+
+	<!-- END GRID -->
+	</div>
+	
+	<script>
+	filterSelection("all")
+	function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("column");
+		if (c == "all") c = "";
+		for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		}
+	}
+	
+	function w3AddClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		}
+	}
+	
+	function w3RemoveClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+			arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		}
+		}
+		element.className = arr1.join(" ");
+	}
+	
+	
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+		});
+	}
+	</script>
+
+
+
+  </body>
+
+
+
+</html>

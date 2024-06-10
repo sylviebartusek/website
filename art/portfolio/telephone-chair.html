@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> Hexadeca-Kit </title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../../styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+	
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="margin: 0;">
+			  <a href="../art.html">all</a>
+			  <a href="../illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content"  style="margin: 0;">
+			  <a href="../../about/bio.html">bio</a>
+			  <a href="../../about/resume.html">resume</a>
+			</div>
+		</div>
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+						<img id="mail-logo" alt="email button" src="../../assets/bio/mail-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+						<img id="linkedin-logo" alt="linkedin button" src="../../assets/bio/linkedin-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<div class="art-title">
+			Telephone Chair
+		</div>
+
+
+		<!-- Container for the image gallery -->
+		<div class="container">
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+			<!-- Full-width images with number text -->
+			<div class="gallery" style="display: block;">
+				<img src="../../assets/portfolio/telephone-chair/final.jpeg" style="width: 30%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/telephone-chair/interaction1.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/telephone-chair/detail1.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/telephone-chair/interaction2.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/telephone-chair/detail2.jpeg" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/telephone-chair/interaction3.jpeg" style="width: 30%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/telephone-chair/interaction4.jpeg" style="width: 50%; display:block">
+			</div>
+		
+			<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+		
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+		
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+		
+				function showSlides(n) {
+					let i;
+					let slides = document.getElementsByClassName("gallery");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+				}
+			</script>
+		</div>
+
+		
+	
+
+	</div>
+
+	<div class="art-info" style="width: 100%; margin-top:5%">
+		<div class="art-date">
+			3/12/24
+		</div>
+		<div class="art-dim">
+			4½" x 1½" x 1½"
+		</div>
+		<div class="art-media">
+			broken rocking chair, wood scraps, tubes		
+		</div>
+	</div>
+	
+	<div class="art-description"> 
+		A rocking chair, to be used as a device to carry sound between one or
+		two individuals. Under the seat is a wooden resonant chamber, connected to
+		two sound-carrying tubes. The tubes can be to listen to, spoken into, or
+		generally be used to play sound through.
+	</div>
+
+	<div class="art-reflection" style="width: 90%; margin-top:2%">
+		Tasked with making a vessel for the intangible, I chose to take the prompt in a literal way, and wanted to create a vessel to input, process, and output sound. The vessel captures and expells sound, but forces the sound to bounce around its confines before being released, giving the sound more reverberations. To the user, the vessel imposes itself on the environment it is placed in.
+		The piece only seats one, and therefore, seems to suggest a solitary and meditative experience. As one sits, they can plug both of their ears into the device, and let the sounds of them rocking overtake them.
+		It is also an experience where one can become metaphysically connected to the material of the chair.
+		As they listen to the creaking of the wood in response to their body’s shifting weight, they can imagine themself creaking too. In this configuration, the vessel on which they sit is directly mapped to the vessel between their ears.
+		In addition, the Telephone Chair has been very conducive to connection between two users. The excitement of carrying sound from one user to another, and hearing how one’s voice changes, becomes an exiting enough prompt for two user to connect to each other metaphysically, as they are placed into the Telephone Chair’s sculptural network, on receiving ends of the interaction.
+		
+	</div>
+
+  </body>
+
+
+
+</html>

@@ -1,0 +1,174 @@
+ <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+	  <title>Sylvie Bartusek</title>
+	  <!-- import CSS styles -->
+	  <link rel="stylesheet" href="styles.css"/> 
+	</head>
+  
+	<!-- page content goes into <body> -->
+	<body >	  
+
+		<!-- TOP NAVIGATION BAR -->
+		<nav class="navbar">
+
+			<!-- LOGO -->
+			<a href="index.html">
+				<img id="siteLogo" alt="Sylvie Bartusek Logo" src="./assets/home/logo.png" width="100px">
+			</a>
+	
+			<!-- art & tech -->
+			<div class="dropdown">
+				<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content" style="margin: 0;">
+				  <a href="./art/art.html">all</a>
+				  <a href="./art/illustration-portfolio.html">illustration</a>
+				</div>
+			</div>
+			
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href="./tech/tech.html">tech</a>
+				</button>
+			</div>
+	
+			
+			<!-- about drop down -->
+			<div class="dropdown">
+				<button class="dropbtn" style="font-weight: bold;">about
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content"  style="margin: 0;">
+				  <a href="./about/bio.html">bio</a>
+				  <a href="./about/resume.html">resume</a>
+				</div>
+			</div>
+
+
+			<div class="navbar-right">
+				<div class="nav-button-container">
+					<button class="btn">
+						<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+							<img id="mail-logo" alt="email button" src="./assets/bio/mail-icon.png" width="30px">
+						</a>
+					</button>
+				</div>
+	
+				<div class="nav-button-container">
+					<button class="btn">
+						<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+							<img id="linkedin-logo" alt="linkedin button" src="./assets/bio/linkedin-icon.png" width="30px">
+						</a>
+					</button>
+				</div>
+			</div>
+
+			
+	
+			
+		</nav>
+
+		<div>
+			<canvas id="myCanvas" style="border:none; background-color:rgb(0, 0, 0); width:100%;"></canvas>
+
+			<script>
+				var c = document.getElementById("myCanvas");
+				var displayWidth = c.width;
+				var displayHeight = c.height;
+				c.style.width = displayWidth + 'px';
+				c.style.height = displayHeight + 'px';
+				c.width = displayWidth;
+				c.height = displayHeight;
+				var ctx = c.getContext("2d");
+				var s = "sylvie bartusek"
+				var i = 0;
+				var loops = 0;
+				var speed = 300;
+				ctx.globalAlpha = 1
+				resizeCanvas()
+
+				function resizeCanvas() {
+					c.width = window.innerWidth;
+					c.height = window.innerHeight / 4;
+					c.style.width = window.innerWidth + 'px';
+					c.style.height = window.innerHeight / 4 + 'px';
+					i = 0;
+					ctx.globalAlpha = 1
+					loops = 0;
+				  }
+
+
+				function randomFromInterval(min, max) { // min and max included 
+					min = Math.floor(min);
+					max = Math.floor(max);
+					return Math.floor(Math.random() * (max - min + 1) + min);
+				  }
+
+				function addLetter(){
+					if (loops >= 10){
+						clearInterval(t);
+					}
+
+					else{
+						ctx.fillStyle = "white";
+						ctx.font = "50px Xahn-Mono";
+
+						var min = i * (c.width-50)/s.length + 25;
+						var max = i * (c.width-50)/s.length + (c.width-50)/s.length;
+						var x_pos = randomFromInterval(min, max);
+
+						ctx.fillText(s.charAt(i), x_pos, randomFromInterval(75, c.height - 75));
+						ctx.stroke();
+						i += 1;
+						if (i == s.length){
+							i = 0;
+							loops += 1;
+							ctx.globalAlpha = 0.2
+						}
+					}
+					
+				}
+
+				window.addEventListener('resize', resizeCanvas);
+      			resizeCanvas();
+
+				var t = setInterval(addLetter, speed);
+
+
+
+				
+			</script>
+		</div>
+
+		<div style="display:flex; margin-left:1%;">
+			<div class='pics_in_a_row'>
+				<div class='img3'>
+					<img src="./assets/home/clutter_circle.png" alt="Clutter">
+				</div>
+				<div class='img3'>
+					<img src="./assets/home/zine_circle.png" alt="Zine">
+					</div>
+				<div class='img3'>
+					<img src="./assets/home/eyes_circle.png" alt="eyes">
+				</div>
+				<div class='img3'>
+					<img src="./assets/home/dog_circle.png" alt="dog">
+				</div>
+			</div>
+		</div>
+	
+	</body>
+
+  </html>
+
+  

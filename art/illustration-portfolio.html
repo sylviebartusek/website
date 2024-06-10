@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>art</title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../styles.css" /> 
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content" style="margin: 0;">
+			  <a href="../art/art.html">all</a>
+			  <a href="../art/illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+			  <i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content"  style="margin: 0;">
+			  <a href="../about/bio.html">bio</a>
+			  <a href="../about/resume.html">resume</a>
+			</div>
+		</div>
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com" style="float: right;">
+						<img id="mail-logo" alt="email button" src="../assets/bio/mail-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/" style="float: right;">
+						<img id="linkedin-logo" alt="linkedin button" src="../assets/bio/linkedin-icon.png" width="30px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div style="overflow-x:hidden; width:90%; margin:auto; margin-bottom:1%">
+		<h1 style="font-size: 40px; text-align:left; margin:0% 1%; font-family:Petit-Formal-Script">
+			<br>illustration portfolio
+		</h1>
+	</div>
+
+	<div style="overflow-x:hidden; width:90%; margin: auto; margin-top:4%;">
+		<!-- ART FILTERS -->
+		<div id="myBtnContainer" style="float:left; width:100%; margin:0; padding:0">
+			<button class="btn active" style="width: 45%; max-width:200px" onclick="filterSelection('bw')"> black & white </button>
+			<button class="btn" style="width: 45%; max-width:200px" onclick="filterSelection('col')"> color & mixed media </button>
+		</div>
+	</div>
+
+
+
+
+	<!-- Portfolio Gallery Grid -->
+	<div id="bw" style="display: none; width:90%; margin:auto">
+
+		<div class='pics_in_a_row'>
+			<div class='img1'>
+				<img src="../assets/illustration/bw/an-apple-arose.png" alt="An Apple Arose">
+				<div class="caption">An Apple Arose</div>
+			</div>
+			<div class='img5'>
+				<img src="../assets/illustration/bw/under-the-bed.png" alt="Under the Bed">
+				<div class="caption">Under the Bed</div>
+				</div>
+			<div class='img5'>
+				<img src="../assets/illustration/bw/i-will-never-stop.jpg" alt="I Will Never Stop for Your Satisfaction">
+				<div class="caption">Window Sill</div>
+			</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img6'>
+				<img src="../assets/illustration/bw/gabby-dogs.jpg" alt="Gabby's Dogs">
+				<div class="caption">Gabby's Dogs</div>
+			</div>
+			<div class='img7'>
+				<img src="../assets/illustration/bw/anabelle_illo_final.jpeg" alt="Annabelle Illustration">
+				<div class="caption">Pain/Pleasure/Numbness</div>
+			</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img2'>
+				<img src="../assets/illustration/bw/the_all_seeing_birds_chair_collection.jpg" alt="The All Seeing Bird's Chair Collection">
+				<div class="caption">The All Seeing Bird's Chair Collection</div>
+			</div>
+			<div class='img2'>
+				<img src="../assets/illustration/bw/julia-monica.jpg" alt="Live Drawing of Julia & Monica">
+				<div class="caption">Live Drawing of Julia & Monica</div>
+			</div>
+			<div class='img3'>
+				<img src="../assets/illustration/bw/walk-in-pvd.jpg" alt="A Walk in Providence">
+				<div class="caption">A Walk in Providence, RI</div>
+			</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img4'>
+				<img src="../assets/illustration/bw/MY_TEETH_ARE_NOT_AFRAID_TO_BITE.jpeg" alt="My Teeth Are Note Afraid To Bite">
+				<div class="caption">My Teeth Are Not Afraid to Bite</div>
+			</div>
+			<div class='img8'>
+				<img src="../assets/illustration/bw/kayleen2.jpg" alt="Portrait of Kayleen">
+				<div class="caption">Portrait of Kayleen</div>
+			</div>
+			<div class='img9'>
+				<img src="../assets/illustration/bw/self-portrait2.jpg" alt="Self-portrait">
+				<div class="caption">Self-Portrait</div>
+			</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img10'>
+				<img src="../assets/illustration/bw/kayleen1.jpg" alt="Kayleen Laying Down">
+				<div class="caption">Kayleen Laying Down</div>
+			</div>
+		</div>
+
+
+		<div class='pics_in_a_row'>
+			<div class='img11'>
+				<img src="../assets/illustration/bw/self-portrait.jpg" alt="Self-portrait in the mirror">
+				<div class="caption">Self-portrait in the mirror</div>
+			</div>
+			<div class='img9'>
+				<img src="../assets/illustration/bw/would_you_still_love_me_final.jpg" alt="Would You Still Love Me">
+				<div class="caption">Would You Still Love me</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- Portfolio Gallery Grid -->
+	<div id="col" style="display: block; width:90%; margin:auto">
+		<div class='pics_in_a_row'>
+			<div class='img12'>
+				<img src="../assets/illustration/other/candles.png" alt="An Apple Arose">
+				<div class="caption">Candles for Palestine</div>
+			</div>
+			<div class='img13'>
+				<img src="../assets/illustration/other/Idk except I do.png" alt="Idk Except I Do">
+				<div class="caption">Idk Except I Do</div>
+				</div>
+			<div class='img14'>
+				<img src="../assets/illustration/other/egg-woman.jpeg" alt="Egg Woman">
+				<div class="caption">Egg Woman</div>
+			</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img15'>
+				<img src="../assets/illustration/other/under_my_boot.jpg" alt="Under My Boot">
+				<div class="caption">Under My Boot</div>
+			</div>
+			<div class='img16'>
+				<img src="../assets/illustration/other/bug-uber.jpeg" alt="Bug x Car (Confrontation)">
+				<div class="caption">Bug x Car (Confrontation)</div>
+				</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img11'>
+				<img src="../assets/illustration/other/music-mansion.jpeg" alt="Music Mansion">
+				<div class="caption">Electric Hour at Music Mansion</div>
+			</div>
+			<div class='img17'>
+				<img src="../assets/illustration/other/luc.jpg" alt="Portait of Luc">
+				<div class="caption">Portrait of Luc</div>
+			</div>
+			<div class='img18'>
+				<img src="../assets/illustration/other/milas_world1.jpeg" alt="Mila's World (Landscape)">
+				<div class="caption">Mila's World (Landscape)</div>
+			</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img15'>
+				<img src="../assets/illustration/other/milas_world2.jpeg" alt="Mila's World (Rock)">
+				<div class="caption">Mila's World (Rock)</div>
+			</div>
+
+			<div class='img19'>
+				<img src="../assets/illustration/other/legacy-admissions.jpeg" alt="Legacy Admissions">
+				<div class="caption">Legacy Admissions at Brown</div>
+			</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img22'>
+				<img src="../assets/illustration/other/scales_final2_cmyk copy.jpg" alt="Scales (Snake)">
+				<div class="caption">Scales</div>
+			</div>
+			<div class='img2'>
+				<img src="../assets/illustration/other/sapphic-breakup.jpeg" alt="Sapphic Breakup">
+				<div class="caption">Queer Breakup</div>
+			</div>
+			<div class='img19'>
+				<img src="../assets/illustration/other/monster_jam.jpeg" alt="Monster Truck Illustration">
+				<div class="caption">Monster Jam</div>
+			</div>
+		</div>
+
+		<div class='pics_in_a_row'>
+			<div class='img20'>
+				<img src="../assets/illustration/other/vlog-dog.jpeg" alt="Vlogging Dog Girl in the Desert">
+				<div class="caption">Vlog Dog</div>
+			</div>
+
+			<div class='img21'>
+				<img src="../assets/illustration/other/sexful-sexless.png" alt="Sexful/Sexless">
+				<div class="caption">Sexful/Sexless</div>
+			</div>
+		</div>
+
+
+	</div>
+	
+
+	<script>
+		filterSelection("bw")
+
+		function filterSelection(c) {
+			var bw = document.getElementById("bw");
+			var col = document.getElementById("col");
+			
+			if (c == "bw"){
+				bw.style.display = "block";
+				col.style.display = "none";
+			}
+
+			else {
+				bw.style.display = "none";
+				col.style.display = "block";
+			}
+		}
+		
+		
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function(){
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+			});
+		}
+		</script>
+
+
+  </body>
+
+
+
+</html>
