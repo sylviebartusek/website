@@ -354,10 +354,11 @@ margin:0%;
 .art-info {
 	float:center;
 	width: 100%;
+	margin-top: 5%;
 }
 
 .art-date {
-	background-color: #000000;
+	/* background-color: #000000; */
 	text-align:right;
 	float: left;
 	width:10%;
@@ -369,7 +370,7 @@ margin:0%;
   }
 
   .art-dim {
-	background-color: #000000;
+	/* background-color: #000000; */
 	text-align:center;
 	float: left;
 	width:10%;
@@ -382,21 +383,20 @@ margin:0%;
   }
 
   .art-media {
-	background-color: #000000;
+	/* background-color: #000000; */
 	text-align:left;
 	float: left;
 	width:30%;
 	overflow-x: hidden;
 	margin-bottom: 5%;
 	margin-right: 20%;
-
 	font-family: Xahn-Mono;
 	font-size: 17px;
   }
 
   .art-description {
 	/* text-indent: 5%; */
-	background-color: #000000;
+	/* background-color: #000000; */
 	float:left;
 	text-align: left;
 	width:90%;
@@ -408,7 +408,7 @@ margin:0%;
   }
 
   .art-reflection {
-	background-color: #000000;
+	/* background-color: #000000; */
 	float:left;
 	width:40%;
 	display: block;
@@ -442,6 +442,30 @@ img{
 	/* margin-bottom: 1%; */
 	/* width: 30%; */
 }
+
+/* .iframe-container{
+	position: relative;
+	overflow: hidden;
+	width: 90%;
+	/* height:500px;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 56.25%;
+	/* max-height: 500px; 
+}*/
+
+/* .responsive-iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 300px;
+  margin-left: 5%;
+  margin-right: 5%; 
+   max-height: 500px;
+} */
 
 
 /* GALLERY  */
