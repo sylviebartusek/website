@@ -6,4 +6,5 @@ The website can be found here: [sylviebartusek.com](https://sylviebartusek.githu
 
 FEATURES TO ADD FOR BETTER USER EXPERIENCE:
 - Clicking an image allows for a user to enter full screen on that image.
-- Embedded videos from vimeo and youtube respond dynamically to the window size. Currently, they remain pretty small, which is especially not ideal when the window is larger. 
+- Embedded videos from vimeo and youtube respond dynamically to the window size. Currently, they remain pretty small, which is especially not ideal when the window is larger.
+- No favicon!
