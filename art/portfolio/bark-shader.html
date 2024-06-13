@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+	  body {
+		 width: 100%;
+		 height: 100%;
+	  }
+   </style>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> Bark Procedural Shader </title>
+	<!-- import CSS styles -->
+	<link rel="stylesheet" href="../../styles.css" /> 
+	<link rel="icon" type="image/x-icon" href="../../assets/home/logo.png">
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+	
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="../sculpture.html">sculpture</a>
+				<a href="../film.html">film</a>
+				<a href="../sound.html">sound</a>
+				<a href="../performance.html">performance</a>
+				<a href="../books.html">book forms</a>
+				<a href="../illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="../../about/bio.html">bio</a>
+				<a href="../../about/resume.html">resume</a>
+			</div>
+		</div>
+
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com">
+						<img id="mail-logo" alt="email button" src="../../assets/bio/mail-icon.png" width="20px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/">
+						<img id="linkedin-logo" alt="linkedin button" src="../../assets/bio/linkedin-icon.png" width="20px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<div class="art-title">
+			Bark Procedural Shader
+		</div>
+
+
+		<!-- Container for the image gallery -->
+		<div class="container">
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)" style="margin-left: 5%; margin-right: 5%;">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)" style="margin-left: 5%; margin-right: 5%;">&#10095;</a>
+
+			<!-- Full-width images with number text -->
+			<div class="gallery" style="display: block;">
+				<img src="../../assets/portfolio/3d-studies/stump_full_moss_cover_with_patches.jpeg" style="width: 75%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/3d-studies/stump_full_moss_frequent_patches.jpeg" style="width: 75%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/3d-studies/stump_full_moss_no_patches.jpeg" style="width: 75%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/3d-studies/stump_light_moss_cover_w_patches.jpeg" style="width: 75%; display:block">
+			</div>
+		
+			<div class="gallery">
+				<img src="../../assets/portfolio/3d-studies/stump_light_moss_no_patches.jpeg" style="width: 75%; display:block">
+			</div>
+
+			<div class="gallery">
+				<img src="../../assets/portfolio/3d-studies/stump_no_moss.jpeg" style="width: 75%; display:block">
+			</div>
+		
+			<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+		
+				// Next/previous controls
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
+		
+				// Thumbnail image controls
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
+		
+				function showSlides(n) {
+					let i;
+					let slides = document.getElementsByClassName("gallery");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex-1].style.display = "block";
+				}
+			</script>
+		</div>
+	</div>
+
+	<div class="art-info" style="width: 100%; margin-top:5%; margin-bottom:0%">
+		<div class="art-date">
+			3/21/23
+		</div>
+		<div class="art-dim">
+			
+		</div>
+		<div class="art-media">
+			Autodesk Maya
+		</div>
+	</div>
+	
+	<div class="art-description"> 
+		A shader made in Autodesk Maya. I programmed different sliders so that they would affect the characteristics of tree bark and the spread of moss. 
+
+	</div>
+
+	<div class="art-reflection" style="width: 90%; margin-top:0%">
+		
+	</div>
+
+  </body>
+
+</html>

@@ -500,12 +500,13 @@ img{
 	user-select: none;
 	-webkit-user-select: none;
 	z-index: 10; /* Ensure buttons are on top */
+	right:100%
 
   }
   
   /* Position the "next button" to the right */
   .next {
-	right: 0;
+	right: 0%;
 	border-radius: 3px 0 0 3px;
   }
   
