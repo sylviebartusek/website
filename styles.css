@@ -500,8 +500,8 @@ img{
 	user-select: none;
 	-webkit-user-select: none;
 	z-index: 10; /* Ensure buttons are on top */
-	right:100%
-
+	/* right:100%; */
+	/* margin-top:20%; */
   }
   
   /* Position the "next button" to the right */

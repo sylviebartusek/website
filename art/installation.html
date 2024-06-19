@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>art</title>
+	<link rel="stylesheet" href="../styles.css" /> 
+	<link rel="icon" type="image/x-icon" href="../assets/home/logo.png">
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body style="background-color:rgb(0, 0, 0);">	  
+
+	<!-- TOP NAVIGATION BAR -->
+	<nav class="navbar">
+
+		<!-- LOGO -->
+		<a href="../index.html">
+			<img id="siteLogo" alt="Sylvie Bartusek Logo" src="../assets/home/logo.png" width="100px">
+		</a>
+
+		<!-- art & tech -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-family:Petit-Formal-Script;">art
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="./sculpture.html">sculpture</a>
+				<a href="./film.html">film</a>
+				<a href="./sound.html">sound</a>
+				<a href="./performance.html">performance</a>
+				<a href="./books.html">book forms</a>
+				<a href="./illustration-portfolio.html">illustration</a>
+			</div>
+		</div>
+		
+		<div class="nav-button-container">
+			<button class="btn">
+				<a href="../tech/tech.html">tech</a>
+			</button>
+		</div>
+
+		
+		<!-- about drop down -->
+		<div class="dropdown">
+			<button class="dropbtn" style="font-weight: bold;">about
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="../about/bio.html">bio</a>
+				<a href="../about/resume.html">resume</a>
+			</div>
+		</div>
+
+
+		<div class="navbar-right">
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "mailto: sylvie.bartusek@gmail.com">
+						<img id="mail-logo" alt="email button" src="../assets/bio/mail-icon.png" width="20px">
+					</a>
+				</button>
+			</div>
+
+			<div class="nav-button-container">
+				<button class="btn">
+					<a href= "https://www.linkedin.com/in/sylvie-bartusek/">
+						<img id="linkedin-logo" alt="linkedin button" src="../assets/bio/linkedin-icon.png" width="20px">
+					</a>
+				</button>
+			</div>
+		</div>
+	</nav>
+
+	<div style="overflow-x:hidden; width:100%;">
+		<h1 style="font-size: 40px; text-align:left; margin:0; margin-left:25px; font-family:Petit-Formal-Script"><br>installations</h1>
+	</div>
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="row" style="margin:auto">
+
+		<div class="column  installation">
+			<div class="content">
+				<a href="./portfolio/iff2024.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/iff2024.jpg" style="width: 90%">
+						<div class="portfolio-title">New Media Exhibition (IFF 2024)</h4>
+						<div class="portfolio-meta">installation | 4/13/24 - 4/14/24</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="column sound installation">
+			<div class="content">
+				<a href="./portfolio/communal-spectre.html">
+					<button class="portfolio-btn">
+						<img class="portfolio-img" src="../assets/portfolio/thumbnails/communal-spectre.jpeg" style="width: 90%">
+						<div class="portfolio-title">Communal Spectre</h4>
+						<div class="portfolio-meta">sound, installation | 12/6/23</p>
+					</button>
+				</a>
+			</div>
+		</div>
+
+
+	<!-- END GRID -->
+	</div>
+	
+	<script>
+	filterSelection("all")
+	function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("column");
+		if (c == "all") c = "";
+		for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		}
+	}
+	
+	function w3AddClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		}
+	}
+	
+	function w3RemoveClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+			arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		}
+		}
+		element.className = arr1.join(" ");
+	}
+	
+	
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+		});
+	}
+	</script>
+
+
+
+  </body>
+
+
+
+</html>
