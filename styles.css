@@ -170,7 +170,7 @@
 	text-align: left;
 	font-style: italic;
 	padding: 1% 1%;
-	margin-left: 30px;
+	margin-left: 20px;
 	width:150px;
   }
   
@@ -501,6 +501,21 @@ img{
 	display: none;
 	margin-bottom: 2%;
   }
+
+  .gallery1 {
+	display: none;
+	margin-bottom: 2%;
+  }
+
+  .gallery2 {
+	display: none;
+	margin-bottom: 2%;
+  }
+
+  .gallery3 {
+	display: none;
+	margin-bottom: 2%;
+  }
   
   /* Next & previous buttons */
   .prev,
@@ -509,8 +524,8 @@ img{
 	position: absolute;
 	top: 40%;
 	width: auto;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
 	padding: 16px;
 	margin-top: -50px;
 	color: white;
@@ -528,6 +543,10 @@ img{
   .next {
 	right: 0%;
 	border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+	right: 65%;
   }
   
   /* On hover, add a black background color with a little bit see-through */

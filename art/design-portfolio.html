@@ -9,7 +9,7 @@
 
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>art</title>
+	<title>design </title>
 	<!-- import CSS styles -->
 	<link rel="stylesheet" href="../styles.css" /> 
 	<link rel="icon" type="image/x-icon" href="../assets/home/logo.png">
@@ -36,7 +36,7 @@
 				<a href="./film.html">film</a>
 				<a href="./sound.html">sound</a>
 				<a href="./performance.html">performance</a>
-				<a href="./books.html">book forms</a>
+				<a href="./books.html"  style="color:rgb(246, 50, 50);">book forms</a>
 				<a href="./illustration-portfolio.html">illustration</a>
 			</div>
 		</div>
@@ -51,7 +51,6 @@
 		<!-- about drop down -->
 		<div class="dropdown">
 			<button class="dropbtn" style="font-weight: bold;">about
-				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-content">
 				<a href="../about/bio.html">bio</a>
@@ -79,14 +78,153 @@
 		</div>
 	</nav>
 
-	<div style="overflow-x:hidden; width:100%">
-		<h1 style="font-size: 50px; text-align:left; margin:0%; margin-left:25px; font-family:Petit-Formal-Script">design portfolio</h1>
-
-		
-
+	<div style="overflow-x:hidden; width:100%; margin-left:2.5%; margin-bottom:2%">
+		<h1 style="font-size: 40px; text-align:left; margin:0; margin-left:25px; font-family:Petit-Formal-Script"><br>design portfolio</h1>
 	</div>
 
-	
+	<div class="art-description" style="margin-bottom: 2%;">
+		VISA 1410 Sculpture Portfolio, Adobe InDesign
+	</div>
+
+	<!-- GALLERY 0 -->
+	<div style="display: block; width:90%; margin:auto; margin-bottom:5%">
+		<!-- Container for the image gallery -->
+		<div class="container">
+			<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+			<!-- Full-width images with number text -->
+			<div class="gallery1" style="display: block;">
+				<img src="../assets/design/visa1410/visa1410-0.jpg" style="width: 40%; display:block">
+			</div>
+
+			<div class="gallery1">
+				<img src="../assets/design/visa1410/visa1410-1.jpg" style="width: 40%; display:block">
+			</div>
+		
+			<div class="gallery1">
+				<img src="../assets/design/visa1410/visa1410-2.jpg" style="width: 40%; display:block">
+			</div>
+		
+			<div class="gallery1">
+				<img src="../assets/design/visa1410/visa1410-3.jpg" style="width: 40%; display:block">
+			</div>
+
+			<div class="gallery1">
+				<img src="../assets/design/visa1410/visa1410-4.jpg" style="width: 40%; display:block">
+			</div>
+		</div>
+	</div>
+
+
+	<!-- GALLERY 1 -->
+	<div class="art-description" style="margin-bottom: 2%;">
+		Game UI for FINAL BOSS, Java & JavaFX
+	</div>
+	<div style="display: block; width:90%; margin:auto; margin-bottom:5%">
+		<div class="container">
+			<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+			<div class="gallery2" style="display: block;">
+				<img src="../assets/design/final-boss-ui/ui1.png" style="width: 50%; display:block">
+			</div>
+
+			<div class="gallery2">
+				<img src="../assets/design/final-boss-ui/ui2.png" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery2">
+				<img src="../assets/design/final-boss-ui/ui3.png" style="width: 50%; display:block">
+			</div>
+		
+			<div class="gallery2">
+				<img src="../assets/design/final-boss-ui/ui4.png" style="width: 50%; display:block">
+			</div>
+		</div>
+	</div>
+
+	<!-- GALLERY 2 -->
+	<div class="art-description" style="margin-bottom: 2%;">
+		Art layouts & posters, Photoshop & InDesign
+	</div>
+	<div style="display: block; width:90%; margin:auto; margin-bottom:5%">
+		<div class="container">
+			<a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+
+			<div class="gallery3" style="display: block;">
+				<img src="../assets/design/auto-moon-projector.jpg" style="width: 40%; display:block">
+			</div>
+
+			<div class="gallery3">
+				<img src="../assets/design/capstone-poster.jpg" style="width: 40%; display:block">
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let slideIndex1 = 1;
+		let slideIndex2 = 1;
+		let slideIndex3 = 1;
+
+		function getSlideIndex(galleryNum){
+			if (galleryNum == 1){
+				return slideIndex1;
+			}
+			else if (galleryNum == 2){
+				return slideIndex2;
+			}
+			else if (galleryNum == 3){
+				return slideIndex3;
+			}
+		}
+
+		function setSlideIndex(galleryNum, index){
+			if (galleryNum == 1){
+				slideIndex1 = index;
+			}
+			else if (galleryNum == 2){
+				slideIndex2 = index;
+			}
+			else if (galleryNum == 3){
+				slideIndex3 = index;
+			}
+		}
+
+		showSlides(slideIndex1, 1);
+		showSlides(slideIndex2, 2);
+		showSlides(slideIndex3, 3);
+
+		
+		// Next/previous controls
+		function plusSlides(n, galleryNum) {
+			slideIndex = getSlideIndex(galleryNum);
+			slideIndex += n;
+
+			setSlideIndex(galleryNum, slideIndex)
+			showSlides(slideIndex, galleryNum);
+		}
+
+		function showSlides(n, galleryNum) {
+			let i;
+			let slides = document.getElementsByClassName("gallery" + galleryNum);
+
+			if (n > slides.length){
+				setSlideIndex(galleryNum, 1);
+			}
+
+			if (n < 1){
+				setSlideIndex(galleryNum, slides.length);
+			}
+
+			for (i = 0; i < slides.length; i++){
+				slides[i].style.display = "none";
+			}
+
+			slides[getSlideIndex(galleryNum) - 1].style.display = "block";
+		}
+	</script>
 
 
 
